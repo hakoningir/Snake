@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import vidmot.*?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.SnakurController">
+   <children>
+      <HBox fx:id="Skot" alignment="TOP_RIGHT" prefHeight="56.0" prefWidth="87.0" spacing="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Ellipse fill="MEDIUMPURPLE" radiusX="8.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fill="MEDIUMPURPLE" layoutX="202.0" layoutY="35.0" radiusX="8.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fill="MEDIUMPURPLE" layoutX="202.0" layoutY="35.0" radiusX="8.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fill="MEDIUMPURPLE" layoutX="202.0" layoutY="35.0" radiusX="8.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fill="MEDIUMPURPLE" layoutX="202.0" layoutY="35.0" radiusX="8.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="100.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+             <SnakurBord fx:id="snakurBord" maxHeight="1000.0" maxWidth="1000.0" minHeight="843.0" minWidth="1000.0" prefHeight="942.0" prefWidth="1000.0" style="-fx-border-color: black;" />
+         </children>
+      </HBox>
+       <Label fx:id="skor" prefHeight="35.0" prefWidth="41.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+           <font>
+               <Font size="24.0" />
+           </font>
+      </Label>
+      <HBox alignment="CENTER" maxHeight="1000.0" maxWidth="1000.0" minHeight="1000.0" minWidth="1000.0" prefHeight="1000.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+             <Button fx:id="spila" onAction="#startGame" prefHeight="117.0" prefWidth="230.0" text="Nýr Leikur">
+                 <font>
+                     <Font size="36.0" />
+                 </font>
+            </Button>
+         </children></HBox>
+   </children>
+</AnchorPane>
